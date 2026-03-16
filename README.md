@@ -1,4 +1,4 @@
-# Shaquan Legae Portfolio
+# Kamogelo Legae Portfolio
 
 [![Website](https://img.shields.io/badge/Website-Live-blue)](https://shaquan-portfolio.netlify.app/)
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This is the personal portfolio of **Shaquan Legae**, an ICT student and full-stack developer.  
+This is the personal portfolio of **Kamogelo Legae**, an ICT student and full-stack developer.  
 The portfolio highlights projects, skills, and provides a way to connect professionally. Built using **HTML, CSS, JavaScript, and Bootstrap 5**.
 
 ---
