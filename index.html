@@ -11,13 +11,13 @@
     <link href="index.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body class="bg-light" id="home">
     <div class="banner-wrap">
         <header class="sticky-top">
             <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 text-white">
                 <h3 class="m-0">Portfolio</h3>
                 <nav class="nav nav-masthead">
-                    <a class="nav-link active" href="#" aria-label="Scroll to top of page">Home</a>
+                    <a class="nav-link" href="#home" aria-label="Scroll to top of page">Home</a>
                     <a class="nav-link" href="#About-Us" aria-label="Skip to About Me section">About Me</a>
                     <a class="nav-link" href="#projects" aria-label="Skip to Projects section">Projects</a>
                     <a class="nav-link" href="#contact" aria-label="Skip to Contact section">Contact</a>
@@ -27,7 +27,13 @@
         <div class="overlay"></div>
         <main class="hero-content text-center text-white">
             <h1 class="display-1">I am Kamogelo Legae</h1>
-            <span id="typed-container" class="lead"><span id="typed"></span><span class="typed-cursor">|</span></span>
+            <span class="lead rotating-text">
+                <span class="rotating-text-item">ICT Student</span>
+                <span class="rotating-text-item">Software Developer</span>
+                <span class="rotating-text-item">Passionate About Technology</span>
+                <span class="rotating-text-item">Building Real Projects</span>
+                <span class="typed-cursor">|</span>
+            </span>
         </main>
     </div>
 
@@ -184,14 +190,26 @@
                     <a class="fs-2" href="https://github.com/Shaquan-Legae" target="_blank"
                         aria-label="Visit GitHub profile"><i class="bi bi-github m-2"></i></a>
                     <form action="https://formsubmit.co/shaquanlegae@gmail.com" method="POST">
-                        <div class="mb-3"><input type="email" class="form-control" name="email"
-                                placeholder="Enter Email Address" required></div>
-                        <div class="mb-3"><input type="text" class="form-control" name="name" placeholder="Enter Name"
-                                required></div>
-                        <div class="mb-3"><input type="text" class="form-control" name="subject"
-                                placeholder="Enter Subject" required></div>
-                        <div class="mb-3"><textarea class="form-control" name="message" placeholder="Enter Message"
-                                rows="4" required></textarea></div>
+                        <div class="mb-3 text-start">
+                            <label for="contact-email" class="form-label">Email address</label>
+                            <input id="contact-email" type="email" class="form-control" name="email"
+                                placeholder="Enter Email Address" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="contact-name" class="form-label">Name</label>
+                            <input id="contact-name" type="text" class="form-control" name="name"
+                                placeholder="Enter Name" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="contact-subject" class="form-label">Subject</label>
+                            <input id="contact-subject" type="text" class="form-control" name="subject"
+                                placeholder="Enter Subject" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea id="contact-message" class="form-control" name="message"
+                                placeholder="Enter Message" rows="4" required></textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
@@ -209,9 +227,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="index.js"></script>
 </body>
 
 </html>
