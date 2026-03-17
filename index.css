@@ -11,9 +11,9 @@ html {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url("resources/Me.jpeg");
+    background-image: url("resources/Me.png");
     background-size: cover;
-    background-position: center;
+    background-position: center -180px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
