@@ -239,8 +239,14 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
     text-decoration: none;
     border-radius: 0.25rem;
     z-index: 10;
+    transition: 0.2s ease-in-out;
 }
 
+#About-Us .download-resume-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
 
 /* About Card Positioning */
 #About-Us .card {
