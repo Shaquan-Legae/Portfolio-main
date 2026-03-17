@@ -13,25 +13,40 @@
 
 <body class="bg-light" id="home">
     <div class="banner-wrap">
+        
         <header class="sticky-top">
-            <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 text-white">
-                <h3 class="m-0">Portfolio</h3>
-                <nav class="nav nav-masthead">
-                    <a class="nav-link" href="#home" aria-label="Scroll to top of page">Home</a>
-                    <a class="nav-link" href="#About-Us" aria-label="Skip to About Me section">About Me</a>
-                    <a class="nav-link" href="#projects" aria-label="Skip to Projects section">Projects</a>
-                    <a class="nav-link" href="#contact" aria-label="Skip to Contact section">Contact</a>
-                </nav>
+            <div class="container d-flex justify-content-between align-items-center py-3 text-white position-relative">
+              <h3 class="m-0">Portfolio</h3>
+          
+              <input type="checkbox" id="menu-toggle" class="d-md-none" />
+              <label for="menu-toggle" class="d-md-none mb-0" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-white"></i>
+              </label>
+          
+              <nav class="nav-masthead d-none d-md-flex">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#About-Us">About Me</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+              </nav>
+          
+              <nav id="mobile-nav" class="d-md-none position-absolute end-0 top-100 bg-dark text-white p-3 rounded">
+                <a class="d-block mb-1 nav-link" href="#home">Home</a>
+                <a class="d-block mb-1 nav-link" href="#About-Us">About Me</a>
+                <a class="d-block mb-1 nav-link" href="#projects">Projects</a>
+                <a class="d-block mb-1 nav-link" href="#contact">Contact</a>
+              </nav>
             </div>
-        </header>
+          </header>
+
         <div class="overlay"></div>
         <main class="hero-content text-center text-white">
             <h1 class="display-1">I am Kamogelo Legae</h1>
             <span class="lead d-inline-flex align-items-center">
                 <span class="rotating-text text-start">
-                    <span class="rotating-text-item">ICT Student</span>
                     <span class="rotating-text-item">Software Developer</span>
-                    <span class="rotating-text-item">Passionate About Technology</span>
+                    <span class="rotating-text-item">Learning & Growing Daily</span>
+                    <span class="rotating-text-item">Passionate about Tech</span>
                     <span class="rotating-text-item">Building Real Projects</span>
                 </span>
             </span>
@@ -46,7 +61,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-5">
-                                <img src="resources/Me.png" class="img-fluid" alt="Portrait of Shaquan Legae">
+                                    <img src="resources/Me.png" class="img-fluid" alt="Portrait of Shaquan Legae">
                                 </div>
                                 <div class="col-md-7 mt-3">
                                     <p><strong>Name:</strong> Kamogelo Legae</p>
@@ -71,8 +86,9 @@
                             </div>
                         </div>
                         <div class="col-md-6 mt-3">
-                            <h1><mark>About Me</mark></h1>
-                            <p class="lead">Hello, I’m Kamogelo Legae. An ICT student and full stack developer who enjoys
+                            <h1 class="fs-2">About Me</h1>
+                            <p class="lead">Hello, I’m Kamogelo Legae. An ICT student and full stack developer who
+                                enjoys
                                 building real world applications and learning new technologies. I’m especially
                                 interested in software engineering, cybersecurity, and data analytics, and I’m always
                                 looking for opportunities to grow by working on practical projects.</p>
@@ -86,11 +102,12 @@
 
     <section id="projects">
         <div class="container p-5">
-            <h1 class="text-center"><mark>Projects</mark></h1>
+            <h1 class="text-center fs-2" >Projects</h1>
             <div class="row">
                 <div class="col-md-4 mt-3">
                     <div class="card">
-                        <img src="resources/keep.png" class="card-img-top" alt="Screenshot of Google Keep clone project">
+                        <img src="resources/keep.png" class="card-img-top"
+                            alt="Screenshot of Google Keep clone project">
                         <div class="card-body">
                             <h5 class="card-title">Google Keep Clone</h5>
                             <p class="card-text">A note-taking web application inspired by Google Keep. Users can
@@ -106,7 +123,9 @@
                             <a href="https://googlekeed.netlify.app/" class="btn btn-primary" target="_blank">View
                                 Website</a>
                             <a href="https://github.com/Shaquan-Legae/Google-Keep-clone.git"
-                                class="btn btn-outline-dark" target="_blank" aria-label="View Google Keep Clone source code on GitHub"><i class="bi bi-code-slash"></i></a>
+                                class="btn btn-outline-dark" target="_blank"
+                                aria-label="View Google Keep Clone source code on GitHub"><i
+                                    class="bi bi-code-slash"></i></a>
                         </div>
                     </div>
                 </div>
@@ -127,14 +146,16 @@
                             <a href="https://shaquan-neftlix.netlify.app" class="btn btn-primary" target="_blank">View
                                 Website</a>
                             <a href="https://github.com/Shaquan-Legae/Netflix-clone.git" class="btn btn-outline-dark"
-                                target="_blank" aria-label="View Netflix Clone source code on GitHub"><i class="bi bi-code-slash"></i></a>
+                                target="_blank" aria-label="View Netflix Clone source code on GitHub"><i
+                                    class="bi bi-code-slash"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mt-3">
                     <div class="card">
-                        <img src="resources/tesla.png" class="card-img-top" alt="Screenshot of Tesla landing page clone project">
+                        <img src="resources/tesla.png" class="card-img-top"
+                            alt="Screenshot of Tesla landing page clone project">
                         <div class="card-body">
                             <h5 class="card-title">Tesla Clone</h5>
                             <p class="card-text">A landing page inspired by Tesla's official website, showcasing modern
@@ -149,7 +170,8 @@
                             <a href="https://telsapage.netlify.app" class="btn btn-primary" target="_blank">View
                                 Website</a>
                             <a href="https://github.com/Shaquan-Legae/Tesla-LP.git" class="btn btn-outline-dark"
-                                target="_blank" aria-label="View Tesla Clone source code on GitHub"><i class="bi bi-code-slash"></i></a>
+                                target="_blank" aria-label="View Tesla Clone source code on GitHub"><i
+                                    class="bi bi-code-slash"></i></a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +193,8 @@
                             <a href="https://shaquan-youtube.netlify.app" class="btn btn-primary" target="_blank">View
                                 Website</a>
                             <a href="https://github.com/Shaquan-Legae/YouTube-clone" class="btn btn-outline-dark"
-                                target="_blank" aria-label="View YouTube Clone source code on GitHub"><i class="bi bi-code-slash"></i></a>
+                                target="_blank" aria-label="View YouTube Clone source code on GitHub"><i
+                                    class="bi bi-code-slash"></i></a>
                         </div>
                     </div>
                 </div>
@@ -184,8 +207,8 @@
         <div class="container p-5">
             <div class="card p-3">
                 <div class="card-body px-5 text-center">
-                    <h1><mark>Let's Connect!</mark></h1>
-                    <p class="lead">Want to collaborate or talk about tech? Send a message and I will respond soon.</p>
+                    <h1 class="fs-2">Let's Connect!</h1>
+                    <p class="lead mb-4">Want to collaborate or talk about tech? Send a message and I will respond soon.</p>
                     <a class="fs-2" href="https://www.linkedin.com/in/kamogelo-legae/" target="_blank"
                         aria-label="Visit LinkedIn profile"><i class="bi bi-linkedin m-2"></i></a>
                     <a class="fs-2" href="https://github.com/Shaquan-Legae" target="_blank"

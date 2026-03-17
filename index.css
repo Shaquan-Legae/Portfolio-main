@@ -13,7 +13,7 @@ html {
     width: 100%;
     background-image: url("resources/Me.png");
     background-size: cover;
-    background-position: center -180px;
+    background-position: center top;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -58,12 +58,26 @@ html {
     gap: 0.25rem;
 }
 
+/* Hero Section Sliding Text Animation */
+
+.rotating-text {
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    height: 1.5em;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
 .rotating-text-item {
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
     opacity: 0;
-    animation: rotate-text 16s infinite;
+    animation: slide-text-h 16s infinite;
 }
 
 .rotating-text-item:nth-child(1) {
@@ -82,22 +96,22 @@ html {
     animation-delay: 12s;
 }
 
-@keyframes rotate-text {
+@keyframes slide-text-h {
     0% {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateX(40px);
     }
 
     5%,
     20% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     25%,
     100% {
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateX(-40px);
     }
 }
 
@@ -154,6 +168,38 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
     border-bottom-color: #fff;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked~#mobile-nav {
+    display: block;
+}
+
+#mobile-nav {
+    display: none;
+    right: 0;
+    top: 100%;
+    background: #000;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+#mobile-nav a {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#mobile-nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(2px);
+}
+
 /* Typed Cursor */
 .typed-cursor {
     display: inline;
@@ -167,7 +213,8 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
     }
 }
 
-/* Download Resume Button */
+/* About me */
+
 #About-Us .download-resume-btn {
     position: absolute;
     bottom: 1rem;
@@ -181,6 +228,7 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
     border-radius: 0.25rem;
     z-index: 10;
 }
+
 
 /* About Card Positioning */
 #About-Us .card {
@@ -227,52 +275,52 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
     }
 }
 
-/* Hero Section Sliding Text Animation */
-
-.rotating-text {
-    position: relative;
-    display: inline-block;
-    width: 260px; 
-    height: 1.5em;
-    overflow: hidden;
-    vertical-align: bottom;
-}
-
-.rotating-text-item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-    opacity: 0;
-    animation: slide-text-h 16s infinite;
-}
-
-.rotating-text-item:nth-child(1) { animation-delay: 0s; }
-.rotating-text-item:nth-child(2) { animation-delay: 4s; }
-.rotating-text-item:nth-child(3) { animation-delay: 8s; }
-.rotating-text-item:nth-child(4) { animation-delay: 12s; }
-
-@keyframes slide-text-h {
-    0% {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    5%, 20% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    25%, 100% {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-}
 
 /* Media Queries */
 
 @media (max-width: 576px) {
     .rotating-text {
         width: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    header h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h3 {
+        font-size: 1.25rem;
+    }
+
+    .mobile-nav a {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+    #About-Us .download-resume-btn {
+        bottom: 0.5rem;
+        right: 0.5rem;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #About-Us .download-resume-btn {
+        bottom: 0.3rem;
+        right: 0.3rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
     }
 }
