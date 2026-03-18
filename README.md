@@ -28,7 +28,6 @@ The portfolio highlights projects, skills, and provides a way to connect profess
 - HTML5, CSS3, JavaScript
 - Bootstrap 5
 - Bootstrap Icons
-- Typed.js for animated typing effect
 - Hosted on Netlify
 
 ---
