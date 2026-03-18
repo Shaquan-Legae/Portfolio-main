@@ -255,6 +255,15 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
 
 /* Projects*/
 
+.btn-primary {
+    border: none;
+    background-color:#212529;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: 0.2s ease-in-out;
+}
+
 #projects .card {
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -265,6 +274,11 @@ body:has(#contact:target) .nav-masthead .nav-link[href="#contact"] {
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+#submit-btn {
+    background: #212529;
+    color: white;
 }
 
 #projects .card:hover {
