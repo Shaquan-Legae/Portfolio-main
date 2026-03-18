@@ -23,7 +23,7 @@ The portfolio highlights projects, skills, and provides a way to connect profess
 
 ---
 
-## Technologies Used
+## TechStack
 
 - HTML5, CSS3, JavaScript
 - Bootstrap 5
